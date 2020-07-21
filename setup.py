@@ -26,9 +26,7 @@ extras_require = {
     'tests': tests_require,
 }
 
-extras_require['all'] = []
-for reqs in extras_require.values():
-    extras_require['all'].extend(reqs)
+extras_require['all'] = [req for _, reqs in extras_require.items() for req in reqs]
 
 
 install_requires = [
