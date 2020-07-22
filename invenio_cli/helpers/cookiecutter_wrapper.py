@@ -9,14 +9,13 @@
 
 """Invenio Cookiecutter Config class."""
 
-import json
+
 import tempfile
-from pathlib import Path
+
 
 import yaml
 from cookiecutter import replay
 from cookiecutter.config import DEFAULT_CONFIG
-from cookiecutter.exceptions import OutputDirExistsException
 from cookiecutter.main import cookiecutter
 
 
